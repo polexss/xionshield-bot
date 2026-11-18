@@ -1,0 +1,11 @@
+fx_version 'cerulean'
+game 'gta5'
+author 'XionShield Support Team'
+lua54 'yes'
+node_version '22'
+name 'xionshield-bot'
+description 'XionShield Discord bot with full server integration'
+version '1.0.0'
+
+server_script 'server/main.js'
+client_script 'client/main.lua'

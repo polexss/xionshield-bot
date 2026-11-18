@@ -1,0 +1,80 @@
+{
+  "token": "",
+  "guildId": "",
+  "xionshieldResource": "auto",
+  "debug": false,
+
+  "permissions": {
+    "owners": [],
+    "roles": {
+      "admin": [],
+      "moderator": [],
+      "support": []
+    },
+    "commandLevels": {}
+  },
+
+  "replies": { "ephemeral": true },
+
+  "channels": {
+    "actions": "",
+    "bans": "",
+    "joins": "",
+    "console": "",
+    "status": ""
+  },
+
+  "presence": { "enabled": true, "text": "{online}/{max} players", "emptyText": "an empty server", "type": 3 },
+  "statusPanel": { "enabled": false, "intervalSeconds": 60, "showPlayers": true },
+
+  "ban": { "xionLogs": true, "screenshotEvidence": true, "screenshotTimeout": 8, "dmPlayer": false, "appealUrl": "" },
+  "banFeed": { "enabled": true, "watchFile": true, "pollSeconds": 45 },
+  "joinLogs": { "enabled": true },
+  "consoleFeed": { "enabled": false, "include": "", "exclude": "", "flushSeconds": 3 },
+
+  "roleSync": {
+    "enabled": false,
+    "mode": "exports",
+    "live": false,
+    "applyDelaySeconds": 4,
+    "acePrefix": "XionShield",
+    "roles": {
+      "000000000000000000": ["*"],
+      "111111111111111111": ["Client", "Vehicle:BypassRepairVehicle", "BypassNoclip"]
+    }
+  },
+
+  "guard": {
+    "enabled": false,
+    "requireDiscord": true,
+    "requireGuild": false,
+    "requiredRoles": [],
+    "bypassRoles": [],
+    "failOpen": true,
+    "kickOnGuildLeave": false
+  },
+
+  "warnings": { "notifyPlayer": true, "kickAt": 0, "banAt": 0 },
+  "screenshot": { "resource": "screenshot-basic", "quality": 0.85 },
+  "revive": { "event": "" },
+  "chat": { "event": "", "announceTitle": "ANNOUNCEMENT", "dmTitle": "STAFF", "color": [99, 102, 241] },
+  "console": { "enabled": false },
+  "privacy": { "showIp": false },
+  "branding": { "footer": "XionShield Bot", "color": "#6366f1" },
+
+  "messages": {
+    "kick": "You were kicked from the server.\nReason: {reason}\nStaff: {staff}",
+    "banReason": "{reason}",
+    "maintenance": "The server is under maintenance. {reason}",
+    "noDiscord": "Discord must be running and linked to FiveM to join this server.",
+    "notInGuild": "You must join our Discord server to play: {invite}",
+    "missingRole": "You do not have the required Discord role to join this server.",
+    "checking": "Verifying your Discord account...",
+    "unavailable": "Discord verification is temporarily unavailable, please try again shortly.",
+    "invite": "discord.gg/yourserver",
+    "warn": "You received a warning from {staff}: {reason} ({count} total)",
+    "banDm": "You have been banned from **{server}**.\nReason: {reason}\nBan ID: {banId}\n{appeal}"
+  },
+
+  "commands": { "disabled": [] }
+}
